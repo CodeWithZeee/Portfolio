@@ -199,7 +199,7 @@ const projects = [
     id: "project-2",
     name: "Astrix BOS",
     description:
-      "Designed and developed a modern, responsive website for AstrixBOS, highlighting their AI-powered business operating system. Focused on clean layouts, intuitive navigation, interactive sections, and visual storytelling to effectively showcase features like AI Co-Pilot Noha, smart automation, and workflow management. Implemented a user-centric design to make complex AI solutions accessible and engaging.",
+      "Built a responsive website for AstrixBOS to showcase their AI-powered business OS. Focused on clean design, intuitive navigation, and interactive sections to present features like AI Co-Pilot Noha, automation, and workflow management in an engaging way.",
     tags: [
       {
         name: "react",
@@ -221,7 +221,7 @@ const projects = [
   {
     id: "project-3",
     name: "Astrix Digital Media",
-    description: "Designed and developed the official website for Astrix Digital Media, focusing on a clean, modern layout that effectively showcases their AI-powered business solutions. The site features interactive elements, responsive design, and clear service presentations to enhance user engagement and convey the brand's commitment to innovation and growth.",
+    description: "Developed the official website for Astrix Digital Media with a clean, modern layout. Features include responsive design, interactive elements, and clear service presentations to showcase their AI-powered solutions.",
     tags: [
       {
         name: "nextjs",

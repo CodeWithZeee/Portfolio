@@ -37,12 +37,7 @@ const About = () => {
       <motion.p
         variants={fadeIn('', '', 0.1, 1)}
         className="mt-4 text-taupe text-[18px] max-w-3xl leading-[30px]">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis
-        sapiente ipsum dolorum dicta eaque cumque inventore molestias, beatae ea
-        quaerat alias accusamus voluptas autem! Alias odit voluptates in totam
-        vitae dignissimos minus eaque culpa unde tempore dolore aperiam
-        obcaecati voluptatum aliquam corrupti, suscipit accusamus! Odit unde
-        veniam dolorum ipsum doloribus.
+       Hey, I’m Zaid! I love turning ideas into functional, beautiful web apps. I work with HTML, CSS, JavaScript, TailwindCSS, and MERN stack, and I’m exploring Python and Machine Learning. Every project is an opportunity to learn something new, and I’m excited to push the boundaries of what I can build next.
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">

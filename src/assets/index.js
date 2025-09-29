@@ -2,12 +2,12 @@ import bwmap from './backgrounds/bw-map.jpeg';
 import nairobi from './backgrounds/nairobi.png';
 import whiteabstract from './backgrounds/white-abstract.png';
 import worldmap from './backgrounds/world-map.png';
-
+import python from './tech/python.png';
 import logo from './logo/logo-black.png';
 import logotext from './logo/logo-text-black.png';
-
+import mongodb from './tech/mongodb.png';
 import shaq from './personal/shaq.png';
-
+import next from './tech/next.png';
 import backend from './icons/backend.png';
 import ux from './icons/ux.png';
 import frontend from './icons/frontend.png';
@@ -22,6 +22,11 @@ import menu from './icons/menu.png';
 import resume from './icons/resume.png';
 import send from './icons/send.png';
 import sendHover from './icons/sendHover.png';
+
+import astrix1 from './projects/astrix1.png';
+import astrix2 from './projects/astrix2.png';
+import astrixbos from './projects/astrixbos.png';
+import netflix from './projects/netflix.png';
 
 import css from './tech/css.png';
 import docker from './tech/docker.png';
@@ -70,6 +75,9 @@ export {
   pineappleHover,
   menu,
   resume,
+  python,
+  mongodb,
+  next,
   send,
   sendHover,
   css,
@@ -96,4 +104,8 @@ export {
   dcc,
   kelhel,
   microverse,
+  astrix1,
+  astrix2,
+  astrixbos,
+  netflix,
 };

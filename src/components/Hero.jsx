@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import { styles } from '../styles';
-import { navLinks } from '../constants';
+// import { navLinks } from '../constants';
 import {bwmap, worldmap } from '../assets';
 
 const Hero = () => {
@@ -59,10 +59,10 @@ const Hero = () => {
         <div
           className="absolute xs:bottom-10 bottom-32 w-full 
           flex justify-center items-center">
-          <a href="#about">
+          <a href="Mohammad_zaid.pdf" download className="cursor-pointer">
             <div
-              className="w-[35px] h-[64px] rounded-3xl border-4 
-            border-french border-dim flex
+              className="w-[86px] h-[54px] rounded-3xl border-4 font-poppins
+            border-french border-dim flex 
             justify-center items-start p-2">
               <motion.div
                 animate={{
@@ -73,8 +73,9 @@ const Hero = () => {
                   repeat: Infinity,
                   repeatType: 'loop',
                 }}
-                className="w-3 h-3 rounded-full bg-taupe mb-1"
+                className="w-3 h-3  bg-taupe mb-1"
               />
+              Resume
             </div>
           </a>
         </div>

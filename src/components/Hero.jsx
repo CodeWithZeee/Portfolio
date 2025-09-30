@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+// import { motion } from 'framer-motion';
 // import { Link } from 'react-router-dom';
 import { styles } from '../styles';
 // import { navLinks } from '../constants';
@@ -7,20 +7,20 @@ import {bwmap, worldmap } from '../assets';
 const Hero = () => {
   return (
     <>
-      <div className="absolute top-0 left-0 z-0 h-[100vh] w-screen">
+      {/* <div className="absolute top-0 left-0 z-0 h-[100vh] w-screen">
         <img
           src={bwmap}
           alt="world map"
           className="w-full h-full sm:block hidden object-cover"
         />
-      </div>
-      <div className="absolute top-0 left-0 z-0 h-[100vh] w-screen">
+      </div> */}
+      {/* <div className="absolute top-0 left-0 z-0 h-[100vh] w-screen">
         <img
           src={worldmap}
           alt="world map"
           className="w-full h-full sm:hidden block object-cover"
         />
-      </div>
+      </div> */}
       <section
         className="relative flex sm:flex-row flex-col w-full h-screen mx-auto 
         sm:bg-hero bg-hero-mobile overflow-hidden">
@@ -37,7 +37,7 @@ const Hero = () => {
           <div>
             <h1
               className={`${styles.heroHeadText} text-eerieBlack font-poppins uppercase`}>
-              Hi, I am{' '}
+              Hi, This is{' '}
               <span
                 className="sm:text-battleGray sm:text-[90px] 
                 text-eerieBlack text-[50px] font-mova
@@ -46,7 +46,7 @@ const Hero = () => {
               </span>
             </h1>
             <p className={`${styles.heroSubText} mt-2 text-eerieBlack`}>
-              Full stack developer with AI enthusiasm
+              Full stack developer with AI enthusiast
             </p>
           </div>
           <div
@@ -56,7 +56,7 @@ const Hero = () => {
           {/* <div></div> */}
         </div>
 
-        <div
+        {/* <div
           className="absolute xs:bottom-10 bottom-32 w-full 
           flex justify-center items-center">
           <a href="Mohammad_zaid.pdf" download className="cursor-pointer">
@@ -78,7 +78,7 @@ const Hero = () => {
               Resume
             </div>
           </a>
-        </div>
+        </div> */}
 
         {/* Your image comes here. Feel free to remove image if you don't plan to have one.*/}
         {/* <div>

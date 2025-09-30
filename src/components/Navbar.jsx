@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
-import { close, menu, logo, logotext } from "../assets";
+import { close, menu } from "../assets";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -14,45 +14,60 @@ const Navbar = () => {
       top-0 z-20 bg-flashWhite sm:opacity-[0.97] xxs:h-[12vh]`}
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
-        <Link
-          to="/"
-          className="flex items-center gap-2"
-          onClick={() => {
-            setActive("");
-            window.scrollTo(0, 0);
-          }}
-        >
-          {/* <img
-            src={logo} // your logo comes here
-            alt="logo"
-            className="sm:w-[50px] sm:h-[50px] w-[45px] h-[45px] object-contain"
-          /> */}
+        <div className="flex items-center">
+          <Link
+            to="/"
+            className="flex items-center gap-2"
+            onClick={() => {
+              setActive("");
+              window.scrollTo(0, 0);
+            }}
+          >
+            {/* <img
+              src={logo} // your logo comes here
+              alt="logo"
+              className="sm:w-[50px] sm:h-[50px] w-[45px] h-[45px] object-contain"
+            /> */}
 
-          {/* if you have text you want besides your logo it comes here.
-          Otherwise delete this if you don't need it. */}
-          {/* <img
-            src={logotext}
-            alt="logo"
-            className="sm:w-[90px] sm:h-[90px] w-[85px] h-[85px] -ml-[0.6rem] object-contain"
-          /> */}
-        </Link>
-        <ul className="list-none hidden sm:flex flex-row gap-14 mt-2">
-          {navLinks.map((nav) => (
-            <li
-              key={nav.id}
-              className={`${
-                active === nav.title ? "text-french" : "text-eerieBlack"
-              } hover:text-taupe text-[21px] font-medium font-mova 
-                uppercase tracking-[3px] cursor-pointer nav-links`}
-              onClick={() => setActive(nav.title)}
-            >
-              <a href={nav.id === "home" ? "#" : `#${nav.id}`}>{nav.title}</a>
-            </li>
-          ))}
-        </ul>
+            {/* if you have text you want besides your logo it comes here.
+            Otherwise delete this if you don't need it. */}
+            {/* <img
+              src={logotext}
+              alt="logo"
+              className="sm:w-[90px] sm:h-[90px] w-[85px] h-[85px] -ml-[0.6rem] object-contain"
+            /> */}
+          </Link>
+          <ul className="list-none hidden sm:flex flex-row gap-14 mt-2 ml-14">
+            {navLinks.map((nav) => (
+              <li
+                key={nav.id}
+                className={`${
+                  active === nav.title ? "text-french" : "text-eerieBlack"
+                } hover:text-taupe text-[21px] font-medium font-mova 
+                  uppercase tracking-[3px] cursor-pointer nav-links`}
+                onClick={() => setActive(nav.title)}
+              >
+                <a href={nav.id === "home" ? "#" : `#${nav.id}`}>{nav.title}</a>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        {/* Resume CTA Button - Desktop */}
+        <div className="hidden sm:flex">
+          <a
+            href="/Mohammad_zaid.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-tertiary hover:bg-french text-white font-bold py-2 px-6 rounded-lg 
+                     transition-all duration-300 hover:scale-105 font-mova uppercase tracking-[2px]"
+          >
+            Resume
+          </a>
+        </div>
 
         {/* mobile */}
-        <div className="sm:hidden flex flex-1 w-screen justify-end items-center">
+        <div className="sm:hidden flex items-center">
           {toggle ? (
             <div
               className={`p-6 bg-flashWhite opacity-[0.98] absolute 
@@ -90,6 +105,19 @@ const Navbar = () => {
                     </a>
                   </li>
                 ))}
+                {/* Resume button in mobile menu */}
+                <li className="mt-8">
+                  <a
+                    href="/Mohammad_zaid.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-tertiary hover:bg-french text-white font-bold py-3 px-8 rounded-lg 
+                             transition-all duration-300 font-arenq uppercase tracking-[2px] text-[24px]"
+                    onClick={() => setToggle(false)}
+                  >
+                    Resume
+                  </a>
+                </li>
               </ul>
             </div>
           ) : (

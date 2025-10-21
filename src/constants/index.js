@@ -237,8 +237,8 @@ const projects = [
       },
     ],
     image: astrix2,
-    // repo: "https://github.com/shaqdeff/Math-Magicians",
-    demo: "https://astrixdigitalmedia.com/",
+    repo: "https://github.com/CodeWithZeee/Astrix-new",
+    demo: "https://astrixdigitalmedia.vercel.app/",
   },
   {
     id: "project-4",
@@ -282,7 +282,7 @@ const projects = [
       },
     ],
     image: nyeusi,
-    repo: "https://github.com/shaqdeff/Nyeusi-Fest-Site",
+    // repo: "https://github.com/shaqdeff/Nyeusi-Fest-Site",
     demo: "https://shaqdeff.github.io/Nyeusi-Fest-Site/",
   },
 ];

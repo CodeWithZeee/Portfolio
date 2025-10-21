@@ -1,8 +1,8 @@
 // import { motion } from 'framer-motion';
 // import { Link } from 'react-router-dom';
-import { styles } from '../styles';
+import { styles } from "../styles";
 // import { navLinks } from '../constants';
-import {bwmap, worldmap } from '../assets';
+// import {bwmap, worldmap } from '../assets';
 
 const Hero = () => {
   return (
@@ -23,12 +23,14 @@ const Hero = () => {
       </div> */}
       <section
         className="relative flex sm:flex-row flex-col w-full h-screen mx-auto 
-        sm:bg-hero bg-hero-mobile overflow-hidden">
+        sm:bg-hero bg-hero-mobile overflow-hidden"
+      >
         <div
           className={`absolute inset-0 sm:top-[250px] top-[150px] 
           lg:top-[150px] xl:top-[250px] ${styles.paddingX} 
           max-w-7xl mx-auto flex flex-row items-start
-          justify-between gap-3`}>
+          justify-between gap-3`}
+        >
           <div className="flex flex-col justify-center items-center mt-5 ml-3">
             <div className="w-5 h-5 rounded-full bg-[#0a0a0a] sm:hidden" />
             <div className="w-1 sm:h-80 h-40 bw-gradient sm:hidden" />
@@ -36,13 +38,15 @@ const Hero = () => {
 
           <div>
             <h1
-              className={`${styles.heroHeadText} text-eerieBlack font-poppins uppercase`}>
-              Hi, This is{' '}
+              className={`${styles.heroHeadText} text-eerieBlack font-poppins uppercase`}
+            >
+              Hi, This is{" "}
               <span
                 className="sm:text-battleGray sm:text-[90px] 
                 text-eerieBlack text-[50px] font-mova
-                font-extrabold uppercase">
-                Mohammad Zaid 
+                font-extrabold uppercase"
+              >
+                Zaid
               </span>
             </h1>
             <p className={`${styles.heroSubText} mt-2 text-eerieBlack`}>
@@ -51,7 +55,8 @@ const Hero = () => {
           </div>
           <div
             className="w-screen flex flex-col items-start 
-            justify-center sm:-ml-[3rem] xxs:mt-4"></div>
+            justify-center sm:-ml-[3rem] xxs:mt-4"
+          ></div>
 
           {/* <div></div> */}
         </div>
